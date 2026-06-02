@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/DevIo.Business/DevIo.Business.csproj" />
+  <Project Path="src/DevIo.Data/DevIo.Data.csproj" />
+</Solution>
