@@ -13,7 +13,7 @@ namespace DevIo.Business.Services
             _fornecedorRepository = fornecedorRepository;
         }
 
-        public async Task Adcionar(Fornecedor fornecedor)
+        public async Task Adicionar(Fornecedor fornecedor)
         {
             if (!ExecutarValidacao(new FornecedorValidation(), fornecedor))
                 return;
@@ -37,7 +37,7 @@ namespace DevIo.Business.Services
                 Notificar("Já existe um fornecedor com este documento informado.");
                 return;
             }
-            
+
             await _fornecedorRepository.Atualizar(fornecedor);
         }
 
@@ -49,7 +49,7 @@ namespace DevIo.Business.Services
             {
                 Notificar("Fornecedor não existe!");
                 return;
-            }   
+            }
 
             if (fornecedor.Produtos.Any())
             {
@@ -58,7 +58,7 @@ namespace DevIo.Business.Services
             }
             var endereco = await _fornecedorRepository.ObterEnderecoPorFornecedor(id);
 
-            if (endereco != null) 
+            if (endereco != null)
             {
                 await _fornecedorRepository.RemoverEnderecoFornecedor(endereco);
             }
