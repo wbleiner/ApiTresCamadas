@@ -1,8 +1,5 @@
 ﻿using DevIO.Business.Models.Validations.Documentos;
 using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DevIo.Business.Models.Validations
 {

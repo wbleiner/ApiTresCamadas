@@ -1,13 +1,10 @@
 ﻿using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DevIo.Business.Models.Validations
 {
-    public class EnderecoValidation: AbstractValidator<Endereco>
+    public class EnderecoValidation : AbstractValidator<Endereco>
     {
-        public EnderecoValidation() 
+        public EnderecoValidation()
         {
             RuleFor(c => c.Logradouro)
                 .NotEmpty().WithMessage("O campo {PropertyName} precisa ser fornecido")

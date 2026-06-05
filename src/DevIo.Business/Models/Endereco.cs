@@ -4,6 +4,7 @@ namespace DevIo.Business.Models
 {
     public class Endereco : Entity
     {
+        public Guid FornecedorId { get; set; }
         public string? Logradouro { get; set; }
         public string? Numero { get; set; }
         public string? Complemento { get; set; }
@@ -12,5 +13,6 @@ namespace DevIo.Business.Models
         public string? Cidade { get; set; }
         public string? Estado { get; set; }
 
+        public Fornecedor Fornecedor { get; set; }
     }
 }

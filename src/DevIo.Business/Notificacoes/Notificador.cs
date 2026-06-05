@@ -1,7 +1,4 @@
 ﻿using DevIo.Business.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DevIo.Business.Notificacoes
 {
@@ -16,7 +13,7 @@ namespace DevIo.Business.Notificacoes
         public void Handle(Notificacao notificacao)
         {
             _notificacoes.Add(notificacao);
-            
+
         }
 
         public List<Notificacao> ObterNotificacoes()

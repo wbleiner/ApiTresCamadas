@@ -1,4 +1,8 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="src/DevIo.Api/DevIo.Api.csproj" Id="2c431841-6d06-459d-8eee-efa96fd393ab" />
   <Project Path="src/DevIo.Business/DevIo.Business.csproj" />
   <Project Path="src/DevIo.Data/DevIo.Data.csproj" />
 </Solution>
